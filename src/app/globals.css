@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
+/* ============================================================
+   朱印（Shuin）— Brand Design Tokens
+   ============================================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 朱印ブランドカラー */
+  --color-shuin-vermillion: #e6492d;
+  --color-shuin-asagi: #4a8b9b;
+  --color-shuin-sumi: #1a1a1a;
+  --color-shuin-sumi-soft: #2a2a2a;
+  --color-shuin-washi: #f5f0e8;
+  --color-shuin-washi-deep: #e8e0d0;
+
+  /* デフォルト：墨色背景の思想ブランド */
+  --background: var(--color-shuin-sumi);
+  --foreground: var(--color-shuin-washi);
+  --muted: rgba(245, 240, 232, 0.6);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-vermillion: var(--color-shuin-vermillion);
+  --color-asagi: var(--color-shuin-asagi);
+  --color-sumi: var(--color-shuin-sumi);
+  --color-sumi-soft: var(--color-shuin-sumi-soft);
+  --color-washi: var(--color-shuin-washi);
+  --color-washi-deep: var(--color-shuin-washi-deep);
+
+  --font-mincho: var(--font-shippori-mincho), "Yu Mincho", "游明朝", "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", serif;
+  --font-sans: var(--font-noto-sans-jp), "Hiragino Sans", "Yu Gothic", -apple-system,
+    "BlinkMacSystemFont", "Helvetica Neue", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+}
+
+/* 明朝体ユーティリティ */
+.font-mincho {
+  font-family: var(--font-mincho);
+  font-feature-settings: "palt" 1;
+}
+
+/* 朱印カラーユーティリティ */
+.text-vermillion {
+  color: var(--color-shuin-vermillion);
+}
+.text-asagi {
+  color: var(--color-shuin-asagi);
+}
+.text-washi {
+  color: var(--color-shuin-washi);
+}
+.bg-vermillion {
+  background-color: var(--color-shuin-vermillion);
+}
+.bg-sumi {
+  background-color: var(--color-shuin-sumi);
+}
+.bg-sumi-soft {
+  background-color: var(--color-shuin-sumi-soft);
+}
+.bg-washi {
+  background-color: var(--color-shuin-washi);
+}
+
+/* 墨色テクスチャ風背景 */
+.bg-sumi-texture {
+  background-color: var(--color-shuin-sumi);
+  background-image:
+    radial-gradient(at 25% 30%, rgba(74, 139, 155, 0.08) 0%, transparent 50%),
+    radial-gradient(at 75% 70%, rgba(230, 73, 45, 0.04) 0%, transparent 50%);
+  background-size: 100% 100%;
+}
+
+/* 印章の "押された" アニメーション */
+@keyframes seal-press {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) rotate(-8deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.95) rotate(2deg);
+  }
+  100% {
+    opacity: 0.92;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-seal-press {
+  animation: seal-press 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* フェードイン */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* 見出しの組版 */
+h1, h2, h3 {
+  font-family: var(--font-mincho);
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+/* スクロールバーを朱印テーマに */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-shuin-sumi);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-shuin-sumi-soft);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(230, 73, 45, 0.3);
 }
