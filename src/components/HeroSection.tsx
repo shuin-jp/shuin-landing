@@ -8,13 +8,13 @@ export function HeroSection() {
     >
       {/* 朱印章を右下から大きくはみ出す構図 */}
       <div className="absolute -bottom-32 -right-32 sm:-bottom-40 sm:-right-40 md:-bottom-48 md:-right-48 lg:-bottom-56 lg:-right-56 pointer-events-none select-none">
-        <div className="relative w-[420px] h-[420px] sm:w-[540px] sm:h-[540px] md:w-[680px] md:h-[680px] lg:w-[820px] lg:h-[820px] opacity-95 animate-seal-press">
+        <div className="relative w-[420px] h-[420px] sm:w-[540px] sm:h-[540px] md:w-[680px] md:h-[680px] lg:w-[820px] lg:h-[820px] animate-seal-press">
           <Image
             src="/shuin-seal.png"
             alt="朱印"
             fill
             priority
-            className="object-contain mix-blend-screen"
+            className="object-contain drop-shadow-[0_0_30px_rgba(230,73,45,0.3)]"
             sizes="(max-width: 640px) 420px, (max-width: 1024px) 680px, 820px"
           />
         </div>

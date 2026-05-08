@@ -7,7 +7,7 @@ export function MerchantCallSection() {
       className="relative bg-sumi-soft py-32 sm:py-40 px-6 sm:px-10 overflow-hidden"
     >
       {/* 朱印章を背景の左上から覗かせる */}
-      <div className="absolute -top-20 -left-20 sm:-top-32 sm:-left-32 pointer-events-none select-none opacity-20">
+      <div className="absolute -top-20 -left-20 sm:-top-32 sm:-left-32 pointer-events-none select-none opacity-15">
         <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] md:w-[480px] md:h-[480px]">
           <Image
             src="/shuin-seal.png"
