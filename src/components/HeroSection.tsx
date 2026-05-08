@@ -26,15 +26,37 @@ export function HeroSection() {
           ─ 朱印 / Shuin ─
         </p>
 
-        <h1 className="font-mincho text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-washi leading-[1.1] tracking-wider animate-fade-in-up delay-200">
+        <h1 className="font-mincho text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-washi leading-[1.1] tracking-wider animate-fade-in-up delay-200 ja-balance">
           令和の
           <br className="sm:hidden" />
           朱印船。
         </h1>
 
-        <p className="mt-10 sm:mt-12 font-mincho text-xl sm:text-2xl md:text-3xl text-washi/90 tracking-wide animate-fade-in-up delay-400">
-          異国の武器を、日本の事業主に授ける。
+        <p className="mt-10 sm:mt-12 font-mincho text-xl sm:text-2xl md:text-3xl text-washi/90 tracking-wide animate-fade-in-up delay-400 ja-balance">
+          <span className="ja-phrase">異国の武器を、</span>
+          <span className="ja-phrase">日本の事業主に授ける。</span>
         </p>
+
+        {/* 希少性訴求 ─ 朱印船の出航条件を一目で */}
+        <div className="mt-12 sm:mt-14 animate-fade-in-up delay-500 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-4">
+          <span className="font-mincho text-xs sm:text-sm text-washi/60 tracking-[0.2em]">
+            ─
+          </span>
+          <span className="inline-flex items-center font-mincho text-sm sm:text-base text-vermillion tracking-wider">
+            毎週金曜21:00 出航
+          </span>
+          <span className="font-mincho text-xs sm:text-sm text-washi/40">/</span>
+          <span className="inline-flex items-center font-mincho text-sm sm:text-base text-vermillion tracking-wider">
+            1号 先着10名
+          </span>
+          <span className="font-mincho text-xs sm:text-sm text-washi/40">/</span>
+          <span className="inline-flex items-center font-mincho text-sm sm:text-base text-vermillion tracking-wider">
+            1週間限定
+          </span>
+          <span className="font-mincho text-xs sm:text-sm text-washi/60 tracking-[0.2em]">
+            ─
+          </span>
+        </div>
 
         <div className="mt-16 sm:mt-20 animate-fade-in-up delay-600">
           <a

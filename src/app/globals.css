@@ -146,6 +146,38 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+/* ============================================================
+   日本語組版ユーティリティ
+   ============================================================ */
+
+/* 文節を割らない（句読点・スペース等でのみ改行） */
+.ja-keep {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+
+/* 見出し用：文節を割らず、行長を自動バランス */
+.ja-balance {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+  text-wrap: balance;
+}
+
+/* 文節単位で改行を制御するための inline-block ラッパー */
+.ja-phrase {
+  display: inline-block;
+}
+
+/* 禁則処理を強める（行頭に「、。」が来ないように） */
+.ja-strict {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+  hanging-punctuation: allow-end last;
+}
+
 /* スクロールバーを朱印テーマに */
 ::-webkit-scrollbar {
   width: 8px;

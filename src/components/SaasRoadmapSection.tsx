@@ -86,7 +86,7 @@ function CurrentSaasCard({ item }: { item: SaasItem }) {
           )}
         </h3>
 
-        <p className="font-mincho text-base sm:text-lg text-washi/70 mb-8 leading-relaxed">
+        <p className="font-mincho text-base sm:text-lg text-washi/70 mb-8 leading-relaxed ja-strict">
           {item.description}
         </p>
 
@@ -121,7 +121,7 @@ function UpcomingCard({ item }: { item: SaasItem }) {
           {statusLabel[item.status]}
         </span>
       </div>
-      <p className="font-mincho text-sm text-washi/60 tracking-wide leading-relaxed mb-3">
+      <p className="font-mincho text-sm text-washi/60 tracking-wide leading-relaxed mb-3 ja-strict">
         {item.description}
       </p>
       <p className="font-mincho text-xs text-asagi tracking-widest">
@@ -142,13 +142,16 @@ export function SaasRoadmapSection() {
           <p className="font-mincho text-sm text-asagi tracking-[0.4em] mb-6">
             ─ ROADMAP ─
           </p>
-          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4]">
-            出航待ちの、朱印たち。
+          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4] ja-balance">
+            <span className="ja-phrase">出航待ちの、</span>
+            <span className="ja-phrase">朱印たち。</span>
           </h2>
-          <p className="mt-6 font-mincho text-base sm:text-lg text-washi/70 leading-relaxed">
-            毎週金曜21:00、新たな朱印が出航する。
-            <br className="sm:hidden" />
-            1週間限定販売、終了後は完全停止。
+          <p className="mt-6 font-mincho text-base sm:text-lg text-washi/70 leading-relaxed ja-balance">
+            <span className="ja-phrase">毎週金曜21:00、</span>
+            <span className="ja-phrase">新たな朱印が出航する。</span>
+            {" "}
+            <span className="ja-phrase">1週間限定販売、</span>
+            <span className="ja-phrase">終了後は完全停止。</span>
           </p>
         </header>
 

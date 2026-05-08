@@ -7,12 +7,12 @@ const promises = [
   {
     n: "弐",
     title: "30分Zoom伴走で、必ず動かす。",
-    body: "「動いた」状態を保証する。動かなければ全額返金する。",
+    body: "「動いた」状態を保証する。重大な不履行があった場合は返金ポリシーに従う。",
   },
   {
     n: "参",
     title: "永年LINE相談を生涯にわたり続ける。",
-    body: "購入者を朱印商人として終生伴走する。卒業はない。",
+    body: "事業継続中の朱印商人として終生伴走する。卒業はない（停止条件は朱印商人契約書 第8条）。",
   },
   {
     n: "肆",
@@ -22,7 +22,7 @@ const promises = [
   {
     n: "伍",
     title: "価値交換の倫理を守る。",
-    body: "無料文化に染まらない。¥100,000という価格に見合う本物の価値を提供し続ける。",
+    body: "無料文化に染まらない。税込¥100,000〜（号により変動）という価格に見合う本物の価値を提供し続ける。",
   },
 ];
 
@@ -35,8 +35,9 @@ export function PromiseSection() {
       <div className="max-w-4xl mx-auto">
         <header className="text-center mb-20">
           <p className="font-mincho text-sm text-asagi tracking-[0.4em] mb-6">─ PROMISE ─</p>
-          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4]">
-            朱印が誓う、五つの約束。
+          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4] ja-balance">
+            <span className="ja-phrase">朱印が誓う、</span>
+            <span className="ja-phrase">五つの約束。</span>
           </h2>
         </header>
 
@@ -53,10 +54,10 @@ export function PromiseSection() {
                 {p.n}
               </span>
               <div>
-                <h3 className="font-mincho text-xl sm:text-2xl md:text-3xl text-washi tracking-wide leading-[1.5] mb-3">
+                <h3 className="font-mincho text-xl sm:text-2xl md:text-3xl text-washi tracking-wide leading-[1.5] mb-3 ja-strict">
                   {p.title}
                 </h3>
-                <p className="font-mincho text-base sm:text-lg text-washi/75 leading-[1.9]">
+                <p className="font-mincho text-base sm:text-lg text-washi/75 leading-[1.9] ja-strict">
                   {p.body}
                 </p>
               </div>
@@ -64,8 +65,9 @@ export function PromiseSection() {
           ))}
         </ol>
 
-        <p className="mt-20 text-center font-mincho text-base sm:text-lg text-asagi tracking-widest">
-          ─ 朱印は「令和の朱印船」として、日本の経済再生に責任を持つ ─
+        <p className="mt-20 text-center font-mincho text-base sm:text-lg text-asagi tracking-widest ja-balance">
+          <span className="ja-phrase">─ 朱印は「令和の朱印船」として、</span>
+          <span className="ja-phrase">日本の経済再生に責任を持つ ─</span>
         </p>
       </div>
     </section>

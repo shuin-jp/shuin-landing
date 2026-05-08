@@ -24,34 +24,33 @@ export function MerchantCallSection() {
           <p className="font-mincho text-sm text-asagi tracking-[0.4em] mb-6">
             ─ MERCHANTS ─
           </p>
-          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4]">
-            朱印商人を、募る。
+          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4] ja-balance">
+            <span className="ja-phrase">朱印商人を、</span>
+            <span className="ja-phrase">募る。</span>
           </h2>
         </header>
 
-        <div className="space-y-8 font-mincho text-lg sm:text-xl text-washi/85 leading-[2] tracking-wide text-center">
-          <p>
-            朱印を授かった者は、
-            <br className="sm:hidden" />
-            「朱印第N号商人」を名乗る権利を得る。
+        <div className="space-y-8 font-mincho text-lg sm:text-xl text-washi/85 leading-[2] tracking-wide text-center ja-strict">
+          <p className="ja-balance">
+            <span className="ja-phrase">朱印を授かった者は、</span>
+            <span className="ja-phrase">「朱印第N号商人」を名乗る権利を得る。</span>
           </p>
 
-          <p>
-            ¥100,000の朱印を受け取り、
-            <br className="sm:hidden" />
-            異国の武器を日本に持ち込む者。
+          <p className="ja-balance">
+            <span className="ja-phrase">¥100,000の朱印を受け取り、</span>
+            <span className="ja-phrase">異国の武器を日本に持ち込む者。</span>
           </p>
 
-          <p>
-            朱印商人ネットワークに参画し、
-            <br className="sm:hidden" />
-            商人同士の知見を交わす者。
+          <p className="ja-balance">
+            <span className="ja-phrase">朱印商人ネットワークに参画し、</span>
+            <span className="ja-phrase">商人同士の知見を交わす者。</span>
           </p>
 
-          <p className="text-vermillion text-xl sm:text-2xl">
-            労働者ではない。
+          <p className="text-vermillion text-xl sm:text-2xl ja-balance">
+            <span className="ja-phrase">労働者ではない。</span>
             <br />
-            あなたは、商人になる。
+            <span className="ja-phrase">あなたは、</span>
+            <span className="ja-phrase">商人になる。</span>
           </p>
         </div>
 
@@ -77,7 +76,7 @@ export function MerchantCallSection() {
               <h3 className="font-mincho text-lg sm:text-xl text-vermillion tracking-wider mb-3">
                 {box.title}
               </h3>
-              <p className="font-mincho text-sm text-washi/70 leading-relaxed">
+              <p className="font-mincho text-sm text-washi/70 leading-relaxed ja-strict">
                 {box.body}
               </p>
             </div>

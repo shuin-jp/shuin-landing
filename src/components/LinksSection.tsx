@@ -14,8 +14,9 @@ export function LinksSection() {
           <p className="font-mincho text-sm text-asagi tracking-[0.4em] mb-6">
             ─ CONNECT ─
           </p>
-          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4]">
-            朱印に、繋がる。
+          <h2 className="font-mincho text-3xl sm:text-4xl md:text-5xl text-washi tracking-wider leading-[1.4] ja-balance">
+            <span className="ja-phrase">朱印に、</span>
+            <span className="ja-phrase">繋がる。</span>
           </h2>
         </header>
 
@@ -35,7 +36,7 @@ export function LinksSection() {
                     {link.name}
                   </h3>
                   {link.description && (
-                    <p className="font-mincho text-sm sm:text-base text-washi/80 leading-relaxed">
+                    <p className="font-mincho text-sm sm:text-base text-washi/80 leading-relaxed ja-strict">
                       {link.description}
                     </p>
                   )}
@@ -70,7 +71,7 @@ export function LinksSection() {
                     {link.name}
                   </h3>
                   {link.description && (
-                    <p className="font-mincho text-xs sm:text-sm text-washi/60 leading-relaxed">
+                    <p className="font-mincho text-xs sm:text-sm text-washi/60 leading-relaxed ja-strict">
                       {link.description}
                     </p>
                   )}
@@ -89,8 +90,9 @@ export function LinksSection() {
           ))}
         </div>
 
-        <p className="mt-16 text-center font-mincho text-sm text-washi/50 tracking-widest">
-          ─ 異国の武器を、日本の事業主に授ける ─
+        <p className="mt-16 text-center font-mincho text-sm text-washi/50 tracking-widest ja-balance">
+          <span className="ja-phrase">─ 異国の武器を、</span>
+          <span className="ja-phrase">日本の事業主に授ける ─</span>
         </p>
       </div>
     </section>
