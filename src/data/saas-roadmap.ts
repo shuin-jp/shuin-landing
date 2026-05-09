@@ -62,6 +62,12 @@ export const saasRoadmap: SaasRoadmap = {
       status: "tba",
       description: "毎週金曜21:00、新たな朱印が出航する。",
     },
+    {
+      number: 4,
+      launchDate: "2026-06-19T21:00:00+09:00",
+      status: "tba",
+      description: "毎週金曜21:00、新たな朱印が出航する。",
+    },
   ],
   released: [],
 };

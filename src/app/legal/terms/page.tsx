@@ -11,7 +11,7 @@ export default function TermsPage() {
       <DraftBanner />
       <LegalLayout title="利用規約" subtitle="朱印 全般の利用条件" lastUpdated="2026-MM-DD">
         <p>
-          本利用規約（以下「本規約」）は、朱印（屋号、運営者：山本 大葵、以下「当方」）が提供するウェブサイト
+          本利用規約（以下「本規約」）は、朱印（屋号、以下「当方」）が提供するウェブサイト
           <a href="https://shuin.jp"> https://shuin.jp</a>
           （以下「本サイト」）および本サイトで販売するデジタル商材・関連サービス（以下「本サービス」）の利用条件を定めるものです。
         </p>

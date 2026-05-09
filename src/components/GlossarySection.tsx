@@ -32,21 +32,21 @@ export function GlossarySection() {
       className="relative bg-sumi py-16 sm:py-20 px-6 sm:px-10 border-t border-b border-washi/5"
     >
       <div className="max-w-4xl mx-auto">
-        <p className="text-center font-mincho text-xs text-asagi tracking-[0.4em] mb-8">
+        <p className="text-center font-mincho text-xs text-asagi tracking-[0.4em] mb-10">
           ─ TERMS ─
         </p>
-        <dl className="grid sm:grid-cols-3 gap-6 sm:gap-8">
+        <dl className="grid sm:grid-cols-3 gap-8 sm:gap-10">
           {terms.map((term) => (
             <div key={term.label} className="text-center sm:text-left">
-              <dt className="mb-2">
+              <dt className="mb-3 flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                 <span className="font-mincho text-lg sm:text-xl text-vermillion tracking-wider">
                   {term.label}
                 </span>
-                <span className="ml-2 font-mincho text-[10px] text-washi/40 tracking-widest">
+                <span className="font-mincho text-[11px] text-washi/45 tracking-widest mt-1 sm:mt-0">
                   {term.reading}
                 </span>
               </dt>
-              <dd className="font-mincho text-xs sm:text-sm text-washi/65 leading-[1.8] ja-strict">
+              <dd className="font-mincho text-xs sm:text-sm text-washi/70 leading-[1.9] ja-strict">
                 {term.description}
               </dd>
             </div>

@@ -79,8 +79,8 @@ export function ResponsibilitySection() {
                   key={i}
                   className="flex items-start gap-3 font-mincho text-sm sm:text-base text-washi/65 leading-[1.8] ja-strict"
                 >
-                  <span className="text-washi/40 text-lg shrink-0 leading-none mt-1">
-                    ─
+                  <span className="text-washi/55 text-lg shrink-0 leading-none mt-1">
+                    ✕
                   </span>
                   <span>{item}</span>
                 </li>

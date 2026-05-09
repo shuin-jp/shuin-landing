@@ -166,7 +166,7 @@ export function SaasRoadmapSection() {
             <h3 className="font-mincho text-lg sm:text-xl text-asagi tracking-widest mb-8 text-center">
               ─ 次なる朱印 ─
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {saasRoadmap.upcoming.map((item) => (
                 <UpcomingCard key={item.number} item={item} />
               ))}
@@ -180,7 +180,7 @@ export function SaasRoadmapSection() {
             <h3 className="font-mincho text-lg sm:text-xl text-washi/50 tracking-widest mb-8 text-center">
               ─ 過去の朱印（販売終了） ─
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {saasRoadmap.released.map((item) => (
                 <UpcomingCard key={item.number} item={item} />
               ))}

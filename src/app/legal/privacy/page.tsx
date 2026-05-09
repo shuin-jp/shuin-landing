@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       <DraftBanner />
       <LegalLayout title="プライバシーポリシー" lastUpdated="2026-MM-DD">
         <p>
-          朱印（屋号、運営者：山本 大葵、以下「当方」）は、本サービスを通じて取得する個人情報を、個人情報の保護に関する法律（個人情報保護法）その他関連法令を遵守し、適切に取り扱います。
+          朱印（屋号、以下「当方」）は、本サービスを通じて取得する個人情報を、個人情報の保護に関する法律（個人情報保護法）その他関連法令を遵守し、適切に取り扱います。
         </p>
 
         <h2>第1条（取得する個人情報）</h2>
@@ -125,8 +125,6 @@ export default function PrivacyPage() {
         <h2>第9条（お問い合わせ窓口）</h2>
         <p>
           屋号：朱印
-          <br />
-          運営者：山本 大葵
           <br />
           メールアドレス：shuin.jp.official@gmail.com
         </p>

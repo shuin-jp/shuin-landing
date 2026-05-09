@@ -22,7 +22,8 @@ export function HeroSection() {
 
       {/* テキストコンテンツ */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 sm:px-10 py-20 text-center">
-        <p className="font-mincho text-sm sm:text-base text-asagi tracking-[0.3em] mb-8 animate-fade-in-up">
+        {/* ブランド・ラベル：見出しと密接な関連 → 近接で詰める */}
+        <p className="font-mincho text-sm sm:text-base text-asagi tracking-[0.3em] mb-6 animate-fade-in-up">
           ─ 朱印 / Shuin ─
         </p>
 
@@ -37,25 +38,21 @@ export function HeroSection() {
           <span className="ja-phrase">日本の事業主に授ける。</span>
         </p>
 
-        {/* 希少性訴求 ─ 朱印船の出航条件を一目で */}
-        <div className="mt-12 sm:mt-14 animate-fade-in-up delay-500 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-4">
-          <span className="font-mincho text-xs sm:text-sm text-washi/60 tracking-[0.2em]">
-            ─
-          </span>
-          <span className="inline-flex items-center font-mincho text-sm sm:text-base text-vermillion tracking-wider">
-            毎週金曜21:00 出航
-          </span>
-          <span className="font-mincho text-xs sm:text-sm text-washi/40">/</span>
-          <span className="inline-flex items-center font-mincho text-sm sm:text-base text-vermillion tracking-wider">
-            1号 先着10名
-          </span>
-          <span className="font-mincho text-xs sm:text-sm text-washi/40">/</span>
-          <span className="inline-flex items-center font-mincho text-sm sm:text-base text-vermillion tracking-wider">
-            1週間限定
-          </span>
-          <span className="font-mincho text-xs sm:text-sm text-washi/60 tracking-[0.2em]">
-            ─
-          </span>
+        {/* 希少性訴求 ─ 朱の枠で囲んでコントラスト強化、フォント太く */}
+        <div className="mt-14 sm:mt-16 animate-fade-in-up delay-500">
+          <div className="inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:gap-x-6 px-5 sm:px-8 py-3 sm:py-4 border border-vermillion/40 bg-vermillion/5 rounded-sm">
+            <span className="inline-flex items-center font-mincho text-sm sm:text-base font-semibold text-vermillion tracking-wider">
+              毎週金曜21:00 出航
+            </span>
+            <span className="font-mincho text-xs sm:text-sm text-vermillion/40">／</span>
+            <span className="inline-flex items-center font-mincho text-sm sm:text-base font-semibold text-vermillion tracking-wider">
+              1号 先着10名
+            </span>
+            <span className="font-mincho text-xs sm:text-sm text-vermillion/40">／</span>
+            <span className="inline-flex items-center font-mincho text-sm sm:text-base font-semibold text-vermillion tracking-wider">
+              1週間限定
+            </span>
+          </div>
         </div>
 
         <div className="mt-16 sm:mt-20 animate-fade-in-up delay-600">

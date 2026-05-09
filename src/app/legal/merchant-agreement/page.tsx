@@ -17,7 +17,7 @@ export default function MerchantAgreementPage() {
         <p>
           <strong>契約当事者</strong>
           <br />
-          提供者：朱印（屋号、運営者：山本 大葵、以下「甲」）
+          提供者：朱印（屋号、以下「甲」）
           <br />
           購入者：朱印商人として本商材を購入する者（以下「乙」）
         </p>
