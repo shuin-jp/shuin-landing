@@ -3,6 +3,7 @@ import { GlossarySection } from "@/components/GlossarySection";
 import { StorySection } from "@/components/StorySection";
 import { PromiseSection } from "@/components/PromiseSection";
 import { ResponsibilitySection } from "@/components/ResponsibilitySection";
+import { IntellectualPropertySection } from "@/components/IntellectualPropertySection";
 import { FAQSection } from "@/components/FAQSection";
 import { SaasRoadmapSection } from "@/components/SaasRoadmapSection";
 import { MerchantCallSection } from "@/components/MerchantCallSection";
@@ -32,6 +33,9 @@ export default function Home() {
 
       {/* 責任範囲：約束すること、約束しないこと */}
       <ResponsibilitySection />
+
+      {/* 知的財産：なぜ著作権を侵害しないのか（4つの構造的理由） */}
+      <IntellectualPropertySection />
 
       {/* よくある質問：8つの懸念に誠実に答える */}
       <FAQSection />
