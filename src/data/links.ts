@@ -20,6 +20,13 @@ export const linkItems: LinkItem[] = [
     emphasis: "primary",
   },
   {
+    id: "lp",
+    name: "朱印 公式サイト",
+    url: "https://shuin.jp",
+    description: "思想・商品・約束の全貌。",
+    emphasis: "secondary",
+  },
+  {
     id: "x",
     name: "X",
     url: "https://x.com/shuin_official",
